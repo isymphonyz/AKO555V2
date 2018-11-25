@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="isymphonyz.ako.ako555.AKO555Payment">
+
+    <RelativeLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_title_background_color">
+
+        <isymphonyz.ako.ako555.customview.RSUTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:text="@string/payment_txt_title"
+            android:textColor="@color/home_txt_title_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTitle"
+        android:cacheColorHint="@android:color/transparent"
+        android:visibility="gone"></ListView>
+
+    <isymphonyz.ako.ako555.customview.RSUTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTitle"
+        android:layout_margin="40dp"
+        android:autoLink="web|phone|all"
+        android:text="@string/payment_txt_detail"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">AKO555</string>
+
+    <!-- Landing Page -->
+    <string name="landing_page_btn_login">เข้าใช้งาน</string>
+    <string name="landing_page_btn_register">ลงทะเบียน</string>
+    <string name="landing_page_txt_please_open_gps">กรุณาเปิดใช้งาน GPS</string>
+    <string name="landing_page_txt_ok">ตกลง</string>
+    <string name="landing_page_txt_close">ปิดแอพพลิเคชั่น</string>
+
+    <!-- Register -->
+    <string name="register_txt_username">ชื่อผู้ใช้งาน</string>
+    <string name="register_txt_password">รหัสผ่าน</string>
+    <string name="register_txt_mobile_device_no">หมายเลขโทรศัพท์</string>
+    <string name="register_txt_vehicle_plate_no">หมายเลขทะเบียนรถ</string>
+    <string name="register_txt_email">Email</string>
+    <string name="register_txt_firstname">ชื่อ</string>
+    <string name="register_txt_lastname">นามสกุล</string>
+    <string name="register_btn_submit">ลงทะเบียน</string>
+    <string name="register_txt_success">การลงทะเบียนเรียบร้อย</string>
+
+    <!-- Home -->
+    <string name="home_txt_title">@string/app_name</string>
+    <string name="home_btn_customer">1. สร้างผู้ว่าจ้าง</string>
+    <string name="home_btn_private_spot">2. สร้างสปอตส่วนตัว</string>
+    <string name="home_btn_project">3. สร้างการแห่ (สร้างแล้วเวลาแห่ ใช้ข้อนี้)</string>
+    <string name="home_btn_public_spot">สปอตรวม</string>
+    <string name="home_btn_send_spot">ส่งสคริปหรือรูปถ่าย</string>
+    <string name="home_btn_map">ดูแผนที่</string>
+    <string name="home_btn_barcode">จ่ายเงิน</string>
+    <string name="home_btn_broadcast">ถ่ายทอดเสียง</string>
+    <string name="home_btn_information">ติดต่อเรา</string>
+    <string name="home_btn_www">http://www.pantamit.com/</string>
+    <string name="home_btn_privacy">นโยบายความเป็นส่วนตัว/</string>
+
+    <!-- Project -->
+    <string name="project_txt_title">@string/home_btn_project</string>
+
+    <!-- Project Create -->
+    <string name="project_create_txt_title">สร้างงานแห่</string>
+    <string name="project_create_txt_project_name">แห่งานอะไร</string>
+    <string name="project_create_txt_date_start">วันที่เริ่ม</string>
+    <string name="project_create_txt_date_end">วันที่สิ้นสุด</string>
+    <string name="project_create_txt_description">รายละเอียด</string>
+    <string name="project_create_hint_date">2559-10-31</string>
+    <string name="project_create_btn_submit">สร้าง</string>
+
+    <!-- Project Insert Customer -->
+    <string name="project_insert_customer_txt_title">เพิ่มลูกค้า</string>
+    <string name="project_insert_customer_txt_project_name">การแห่: </string>
+    <string name="project_insert_customer_txt_select_atleast_one">กรุณาเลือกอย่างน้อย 1 รายการ</string>
+
+    <!-- Project Insert Media -->
+    <string name="project_insert_media_txt_title">เพิ่มสปอต</string>
+
+    <!-- Project Insert Device -->
+    <string name="project_insert_device_txt_title">เพิ่มอุปกรณ์</string>
+
+    <!-- Project Info -->
+    <string name="project_info_txt_title">ข้อมูลการแห่</string>
+    <string name="project_info_txt_date_create">วันที่สร้าง: </string>
+    <string name="project_info_txt_date_last_update">วันที่อัพเดทล่าสุด: </string>
+    <string name="project_info_txt_date_start">ระยะเวลา: </string>
+    <string name="project_info_txt_date_description">รายละเอียด: </string>
+    <string name="project_info_txt_media_title">ช้อมูลสปอต</string>
+    <string name="project_info_txt_media_total_file">จำนวนไฟล์: </string>
+    <string name="project_info_txt_media_file_size">ขนาดไฟล์: </string>
+    <string name="project_info_txt_media_duration">ความยาว: </string>
+    <string name="project_info_txt_customer_title">รายชื่อลูกค้า</string>
+    <string name="project_info_btn_edit_project">แก้ไขโปรเจค</string>
+    <string name="project_info_txt_media_list_title">รายการคลิปเสียง</string>
+
+    <!-- Customer -->
+    <string name="customer_txt_title">ผู้ว่าจ้างและผู้ใช้บริการรถแห่</string>
+
+    <!-- Customer Create -->
+    <string name="customer_create_txt_title">สร้างผู้ว่าจ้างและผู้ใช้บริการรถแห่</string>
+    <string name="customer_create_txt_firstname">ชื่อ / ชื่อหน่วยงาน</string>
+    <string name="customer_create_txt_lastname">นามสกุล</string>
+    <string name="customer_create_txt_citizen_id">เลขประจำตัวผู้เสียภาษี</string>
+    <string name="customer_create_txt_address">ที่อยู่</string>
+    <string name="customer_create_txt_tumbon">ตำบล</string>
+    <string name="customer_create_txt_amphur">อำเภอ</string>
+    <string name="customer_create_txt_province">จังหวัด</string>
+    <string name="customer_create_txt_postcode">รหัสไปรษณีย์</string>
+    <string name="customer_create_txt_telephone">โทรศัพท์บ้าน</string>
+    <string name="customer_create_txt_mobile">มือถือ</string>
+    <string name="customer_create_txt_email">อีเมล์</string>
+    <string name="customer_create_txt_username">ชื่อผู้ใช้งานสำหรับดูรถแห่บนเว็บ</string>
+    <string name="customer_create_txt_password">รหัสผ่าน</string>
+    <string name="customer_create_txt_description">รายละเอียด</string>
+
+    <!-- Customer Info -->
+    <string name="customer_info_txt_title">ผู้ว่าจ้างและผู้ใช้บริการรถแห่</string>
+
+    <!-- Media Create -->
+    <string name="media_create_txt_title">สร้างสปอต</string>
+    <string name="media_create_txt_media_name">ชื่อสปอต: </string>
+    <string name="media_create_txt_media_description">รายละเอียด: </string>
+    <string name="media_create_txt_media_url">ที่อยู่สปอต: </string>
+    <string name="media_create_dialog_txt_title">กรุณาเลือกประเภทสปอต</string>
+    <string name="media_create_dialog_txt_file">ไฟล์</string>
+    <string name="media_create_dialog_txt_url">URL</string>
+
+    <!-- Media List -->
+    <string name="media_list_txt_title">รายการสปอต</string>
+
+    <!-- Media Player -->
+    <string name="media_player_txt_duration">เวลา</string>
+
+    <!-- Send Spot -->
+    <string name="send_spot_txt_spot_title">ชื่อ</string>
+    <string name="send_spot_txt_spot_description">รายละเอียด</string>
+    <string name="send_spot_txt_spot_image">เลือกรูป</string>
+    <string name="send_spot_btn_send">ส่ง</string>
+    <string name="send_spot_dialog_image_txt_take_camera">ถ่ายรูป</string>
+    <string name="send_spot_dialog_image_txt_choose_file">เลือกไฟล์</string>
+    <string name="send_spot_dialog_image_txt_cancel">ยกเลิก</string>
+    <string name="send_spot_dialog_image_txt_add_photo">เพิ่มรูป</string>
+    <string name="send_spot_dialog_image_txt_delete">ลบ</string>
+    <string name="send_spot_dialog_image_txt_close">ปิด</string>
+    <string name="send_spot_txt_complete">ส่งสำเร็จ</string>
+
+    <!-- Payment -->
+    <string name="payment_txt_title">@string/home_btn_barcode</string>
+    <string name="payment_txt_detail">ให้ทดลองใช้ฟรี\n\nชำระค่าผลิตสปอต ตัวละ 1,500 บาท โอนมาแค่ 1,100 บาท\nสปอตหาเสียง ตัวละ 2,000 บาท โอนมาแค่ 1,500 บาท (รถแห่ต้องไปเก็บลูกค้าเต็มราคา ส่วนต่างที่เหลือเป็นของท่าน)\n\nโอนเงิน ชื่อบัญชี นายประทุม พินคง\nธนาคารกสิกรไทย สาขาชุมพร\nเลขที่ 113-2-84156-6\n\nหรือ พร้อมเพย์ 0818914896</string>
+
+    <!-- Payment Info -->
+    <string name="payment_info_txt_title">ข้อมูลการจ่ายเงิน</string>
+    <string name="payment_info_txt_description">รายละเอียด: </string>
+    <string name="payment_info_txt_payment_number">เลขที่ชำระ: </string>
+    <string name="payment_info_txt_amount">จำนวนเงิน: </string>
+    <string name="payment_info_txt_due_date">กำหนดชำระ: </string>
+    <string name="payment_info_txt_barcode_counter_service">Barcode Counter Service / 7-11</string>
+    <string name="payment_info_txt_barcode_tesco_lotus">Barcode Tesco Lotus</string>
+
+    <!-- Map -->
+    <string name="map_txt_here">คุณอยู่ที่นี่</string>
+
+    <!-- Information -->
+    <string name="information_txt_detail">เว็บ www.ako555.com\n\nหนุ่ม ธรรมรัตน์ 081-891-4896\n\nLine: @ako555</string>
+
+    <!-- Under Construction -->
+    <string name="under_construction_txt_title">กำลังดำเนินการ</string>
+    <string name="title_activity_ako555_map">Map</string>
+
+</resources>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="isymphonyz.ako.ako555.AKO555Home">
+
+    <RelativeLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_title_background_color">
+
+        <isymphonyz.ako.ako555.customview.RSUTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:text="@string/customer_create_txt_title"
+            android:textColor="@color/home_txt_title_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTitle"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtFirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_firstname"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputFirstname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFirstname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtLastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputFirstname"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_lastname"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputLastname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLastname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtCitizenID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputLastname"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_citizen_id"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputCitizenID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCitizenID"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputCitizenID"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_address"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAddress"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtTumbon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAddress"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_tumbon"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <Spinner
+                android:id="@+id/inputTumbon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTumbon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtAmphur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputTumbon"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_amphur"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <Spinner
+                android:id="@+id/inputAmphur"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAmphur"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtProvince"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAmphur"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_province"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <Spinner
+                android:id="@+id/inputProvince"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtProvince"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtPostcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputProvince"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_postcode"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputPostcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPostcode"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtTelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputPostcode"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_telephone"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputTelephone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTelephone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputTelephone"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_mobile"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputMobile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMobile"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputMobile"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_email"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEmail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputEmail"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_username"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputUsername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtUsername"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputUsername"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_password"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <isymphonyz.ako.ako555.customview.RSUTextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputPassword"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/customer_create_txt_description"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <EditText
+                android:id="@+id/inputDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDescription"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:lines="5"
+                android:gravity="left|top"
+                android:textAppearance="@android:style/TextAppearance.Large"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputDescription"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_login_button"
+                android:text="@string/project_create_btn_submit"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

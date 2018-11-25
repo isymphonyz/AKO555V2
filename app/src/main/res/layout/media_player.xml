@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="isymphonyz.ako.ako555.AKO555MediaPlayer">
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="songName"
+        android:layout_margin="20dp"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <ImageView
+        android:id="@+id/mp3Image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="30dp"
+        android:background="#ffffff"
+        android:padding="30dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/songDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/media_player_txt_duration"
+        android:visibility="gone" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/media_previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/custom_green_button"
+            android:onClick="previous"
+            android:src="@android:drawable/ic_media_previous"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/media_rew"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/custom_green_button"
+            android:onClick="rewind"
+            android:src="@android:drawable/ic_media_rew"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/media_pause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/custom_green_button"
+            android:onClick="pause"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <ImageView
+            android:id="@+id/media_play"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/custom_green_button"
+            android:onClick="play"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageView
+            android:id="@+id/media_ff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/custom_green_button"
+            android:onClick="forward"
+            android:src="@android:drawable/ic_media_ff"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/media_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@drawable/custom_green_button"
+            android:onClick="next"
+            android:src="@android:drawable/ic_media_next"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="isymphonyz.ako.ako555.AKO555ProjectInfo">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/project_info_title_background_color"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:padding="8dp"
+                android:text="@string/project_info_txt_title"
+                android:textColor="@color/home_txt_title_color"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <ImageView
+                android:id="@+id/btnMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:src="@android:drawable/stat_sys_headset"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/btnEdit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/ic_edit_01"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtProjectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutTitle"
+            android:layout_margin="8dp"
+            android:text="@string/app_name"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDateCreateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtProjectTitle"
+            android:layout_below="@+id/txtProjectTitle"
+            android:layout_margin="4dp"
+            android:text="@string/project_info_txt_date_create"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDateCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtProjectTitle"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/txtDateCreateTitle"
+            android:text="@string/project_info_txt_date_create"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDateUpdateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtProjectTitle"
+            android:layout_below="@+id/txtDateCreate"
+            android:layout_margin="4dp"
+            android:text="@string/project_info_txt_date_last_update"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDateUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDateCreate"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/txtDateUpdateTitle"
+            android:text="@string/project_info_txt_date_last_update"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDateStartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtProjectTitle"
+            android:layout_below="@+id/txtDateUpdate"
+            android:layout_margin="4dp"
+            android:text="@string/project_info_txt_date_start"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDateStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDateUpdate"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/txtDateStartTitle"
+            android:text="@string/project_info_txt_date_start"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDescriptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtProjectTitle"
+            android:layout_below="@+id/txtDateStart"
+            android:layout_margin="4dp"
+            android:text="@string/project_info_txt_date_description"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDateStart"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/txtDescriptionTitle"
+            android:text="@string/project_info_txt_date_description"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtMediaTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDescription"
+            android:layout_margin="8dp"
+            android:text="@string/project_info_txt_media_title"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtTotalFileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMediaTitle"
+            android:layout_below="@+id/txtMediaTitle"
+            android:layout_margin="4dp"
+            android:text="@string/project_info_txt_media_total_file"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtTotalFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMediaTitle"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/txtTotalFileTitle"
+            android:text="@string/project_info_txt_media_total_file"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtFileSizeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMediaTitle"
+            android:layout_below="@+id/txtTotalFile"
+            android:layout_margin="4dp"
+            android:text="@string/project_info_txt_media_file_size"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtFileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTotalFile"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/txtFileSizeTitle"
+            android:text="@string/project_info_txt_media_file_size"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDurationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMediaTitle"
+            android:layout_below="@+id/txtFileSize"
+            android:layout_margin="4dp"
+            android:text="@string/project_info_txt_media_duration"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFileSize"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/txtDurationTitle"
+            android:text="@string/project_info_txt_media_duration"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txtCustomerListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDuration"
+            android:layout_margin="8dp"
+            android:text="@string/project_info_txt_customer_title"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtCustomerListTitle"
+            android:layout_below="@+id/txtCustomerListTitle"
+            android:layout_margin="4dp"
+            android:text="@string/project_info_txt_customer_title"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <isymphonyz.ako.ako555.customview.RSUTextView
+        android:id="@+id/txtMediaListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_margin="8dp"
+        android:text="@string/project_info_txt_media_list_title"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+    <ImageView
+        android:id="@+id/btnAddMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_toRightOf="@+id/txtMediaListTitle"
+        android:adjustViewBounds="true"
+        android:src="@android:drawable/ic_input_add"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMediaListTitle"
+        android:cacheColorHint="@android:color/transparent"></ListView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

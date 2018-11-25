@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <isymphonyz.ako.ako555.customview.RSUTextView
+        android:id="@+id/txtName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:layout_margin="8dp"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@android:color/black"
+        android:text="@string/app_name" />
+
+</RelativeLayout>
