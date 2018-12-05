@@ -33,6 +33,8 @@ public class AKO555MediaPlayer extends AppCompatActivity {
     private ImageView media_play;
     private ImageView media_ff;
     private ImageView media_next;
+    private ImageView btnPause;
+    private ImageView btnPlay;
 
     String folderName = MyConfiguration.FOLDER_AKO555 + File.separator + MyConfiguration.FOLDER_PUBLIC_SPOT;
     Bundle extras;
@@ -84,6 +86,8 @@ public class AKO555MediaPlayer extends AppCompatActivity {
         media_play = (ImageView) findViewById(R.id.media_play);
         media_ff = (ImageView) findViewById(R.id.media_ff);
         media_next = (ImageView) findViewById(R.id.media_next);
+        btnPause = (ImageView) findViewById(R.id.btnPause);
+        btnPlay = (ImageView) findViewById(R.id.btnPlay);
 
         setMediaPlayer(filePath);
 
@@ -97,6 +101,24 @@ public class AKO555MediaPlayer extends AppCompatActivity {
 
         seekbar.setMax((int) finalTime);
         seekbar.setClickable(false);
+
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnPlay.setImageResource(R.mipmap.ic_play_02);
+                btnPause.setImageResource(R.mipmap.ic_pause_01);
+                play(v);
+            }
+        });
+
+        btnPause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnPlay.setImageResource(R.mipmap.ic_play_01);
+                btnPause.setImageResource(R.mipmap.ic_pause_02);
+                pause(v);
+            }
+        });
     }
 
     public void setMediaPlayer(String filePath) {

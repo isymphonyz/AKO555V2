@@ -266,7 +266,7 @@ public class AKO555LandingPage extends AppCompatActivity {
                 //signinDialog.setProgressBar(progressBar);
                 signinDialog.showSignInDialog();
                 Intent intent = new Intent();
-                intent.setClassName(getPackageName(), getPackageName() + ".AKO555Home");
+                intent.setClassName(getPackageName(), getPackageName() + ".AKO555HomeV2");
                 //startActivity(intent);
                 //finish();
             }
@@ -366,6 +366,8 @@ public class AKO555LandingPage extends AppCompatActivity {
                 // exponential back-off when retrying.
             }
         });
+
+        ShortcutIcon();
     }
 
     @Override
@@ -465,7 +467,7 @@ public class AKO555LandingPage extends AppCompatActivity {
                 appPreference.setMobileTrackingIntervalLocation(jObjDataSystemSetting.getString("mobile-tracking-interval-location"));
 
                 Intent intent = new Intent();
-                intent.setClassName(getPackageName(), getPackageName() + ".AKO555Home");
+                intent.setClassName(getPackageName(), getPackageName() + ".AKO555HomeV2");
                 startActivity(intent);
                 finish();
             } else {
@@ -479,7 +481,7 @@ public class AKO555LandingPage extends AppCompatActivity {
             // TODO Auto-generated catch block
             e.printStackTrace();
             Intent intent = new Intent();
-            intent.setClassName(getPackageName(), getPackageName() + ".AKO555Home");
+            intent.setClassName(getPackageName(), getPackageName() + ".AKO555HomeV2");
             //startActivity(intent);
             //finish();
         }
@@ -542,5 +544,19 @@ public class AKO555LandingPage extends AppCompatActivity {
         android.app.AlertDialog alertDialog = alertDialogBuilder.create();
         // show alert
         alertDialog.show();
+    }
+
+    private void ShortcutIcon(){
+        Intent shortcutIntent = new Intent(getApplicationContext(), AKO555Information.class);
+        shortcutIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        shortcutIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        Intent addIntent = new Intent();
+        addIntent.putExtra("duplicate", false);
+        addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
+        addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, "Test");
+        addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.mipmap.ic_type_folder));
+        addIntent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+        getApplicationContext().sendBroadcast(addIntent);
     }
 }

@@ -31,7 +31,7 @@
     <string name="home_btn_broadcast">ถ่ายทอดเสียง</string>
     <string name="home_btn_information">ติดต่อเรา</string>
     <string name="home_btn_www">http://www.pantamit.com/</string>
-    <string name="home_btn_privacy">นโยบายความเป็นส่วนตัว/</string>
+    <string name="home_btn_privacy">นโยบายความเป็นส่วนตัว</string>
 
     <!-- Project -->
     <string name="project_txt_title">@string/home_btn_project</string>

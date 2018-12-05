@@ -203,7 +203,7 @@ public class SignInDialog {
 				appPreference.setPassword(password);
 				appPreference.setMobileDeviceNo(mobileDeviceNo);
 				Intent intent = new Intent();
-	        	intent.setClassName(activity.getPackageName(), activity.getPackageName() + ".AKO555Home");
+	        	intent.setClassName(activity.getPackageName(), activity.getPackageName() + ".AKO555HomeV2");
 	        	activity.startActivity(intent);
 	            activity.finish();
 			} else {
